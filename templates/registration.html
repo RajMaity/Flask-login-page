@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Join Us</h2>
+            <p>Create your account to get started</p>
+            
+            <form method="post" action="/save_user">
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="username" placeholder="John Doe" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+                
+                <button type="submit" class="login-btn">Register</button>
+            </form>
+            
+            <div class="signup-link">
+                <p>Already have an account? <a href="/">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
